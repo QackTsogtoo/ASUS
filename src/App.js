@@ -1,13 +1,14 @@
 import './App.css';
-import Box from './components/Box';
-function App() {
-  console.log("He")
+import { Button, Space } from 'antd';
+const App = () => {
   return (
-    <div className='boxes'>
-      <p>hi</p>
-      <Box />
-    </div>
+    <Space wrap>
+    <Button type="primary">Primary Button</Button>
+    <Button>Default Button</Button>
+    <Button type="dashed">Dashed Button</Button>
+    <Button type="text">Text Button</Button>
+    <Button type="link">Link Button</Button>
+  </Space>
   );
-}
-
+} 
 export default App;
